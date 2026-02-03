@@ -1,0 +1,27 @@
+import openpyxl
+wb=openpyxl.workbook()
+sheet=wb.active
+sheet["A8"]="usman"
+sheet["B8"]=29
+sheet["C8"]=26
+sheet["D8"]=13
+wb.save("ex.xlsx")
+
+
+
+
+
+
+
+
+import openpyxl
+wb=openpyxl.load_workbook("ex.xlsx")
+note=wb.active
+for column in note.iter_rows(values_only=True):
+    print(column)
+
+
+
+
+
+
