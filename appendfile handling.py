@@ -30,6 +30,6 @@ wb.save("students.xlsx")
 #for specific column  
 for cell in sheet["A"]:
  print(cell.value)
-#for specific  row
+
 for cell in sheet["1"]:
  print(cell.value)
