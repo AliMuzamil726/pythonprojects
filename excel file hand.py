@@ -13,7 +13,6 @@ sheet["B2"]=20
 sheet["C2"]=85
 #save file
 wb.save("student.xlsx")"""
-
 #read data
 from openpyxl import load_workbook
 wb=load_workbook("ex.xlsx")
